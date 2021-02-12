@@ -1,0 +1,105 @@
+{
+    "name": "PlayerInputMap",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "012d7c8d-c778-4c6c-9c24-bd19011db8fb",
+            "actions": [
+                {
+                    "name": "MoveHorizontally",
+                    "type": "Button",
+                    "id": "b875c54e-85fe-45e3-a571-c2df7e3835d1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "SlowTap(duration=0.01,pressPoint=0.5)"
+                },
+                {
+                    "name": "Rotate",
+                    "type": "Button",
+                    "id": "84b6415c-b67a-43bd-b456-220349198fd8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "BoostFalling",
+                    "type": "Button",
+                    "id": "4ddf5900-f7e8-4ca4-8aa8-f821558b5add",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "SlowTap(duration=0.01,pressPoint=0.01)"
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "Arrows",
+                    "id": "6072c810-2315-4e2e-9b8a-20506283954a",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveHorizontally",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "86798d02-fc3e-45f2-a069-b6808bb6aee1",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyBoard",
+                    "action": "MoveHorizontally",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "080fe1e4-7441-472e-86ec-75d1ad9f8b38",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyBoard",
+                    "action": "MoveHorizontally",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "8e372ac2-2c78-4690-a30c-9b8bdc8e493c",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bd551d8e-3d10-458b-a11a-a8da02c453ba",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BoostFalling",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "KeyBoard",
+            "bindingGroup": "KeyBoard",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
