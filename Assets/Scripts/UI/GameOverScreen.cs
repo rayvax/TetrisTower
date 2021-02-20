@@ -44,13 +44,13 @@ public class GameOverScreen : MonoBehaviour
     private void OnReplayButtonClick()
     {
         Time.timeScale = 1;
-        GameSceneManager.ReloadScene();
+        GameSceneLoader.ReloadScene();
     }
 
     private void OnMainMenuButtonClick()
     {
         Time.timeScale = 1;
-        GameSceneManager.LoadMainMenu();
+        GameSceneLoader.LoadMainMenu();
     }
 
     private void OpenScreen()
